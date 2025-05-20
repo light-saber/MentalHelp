@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Help</title>
+    <meta name="description" content="Online counselling services by Vipanchika, Psychologist. Specializing in mental health, depression, anxiety, and therapy.">
+    <meta name="keywords" content="Mental help, Mental health, depression, counselling, therapy, psychologist, online counselling, Vipanchika">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-bg {
+            background-color: #E0E7FF; /* A light, calming blue/lavender */
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .section-title {
+            font-size: 2.25rem; /* 36px */
+            font-weight: 600;
+            margin-bottom: 1.5rem; /* 24px */
+            color: #1F2937; /* Tailwind gray-800 */
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #4F46E5; /* Tailwind indigo-600 */
+        }
+        .psychologist-photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .service-card-image {
+            width: 100%;
+            height: 180px; /* Adjust height as needed */
+            object-fit: cover;
+            border-top-left-radius: 0.75rem; /* rounded-xl for top corners */
+            border-top-right-radius: 0.75rem;
+        }
+        @media (max-width: 768px) { /* md breakpoint */
+            .psychologist-photo {
+                width: 150px;
+                height: 150px;
+                margin-bottom: 1rem;
+            }
+            .hero-content { text-align: center; }
+            .hero-content .flex-col { 
+                align-items: center;
+            }
+            #desktopNavLinks { display: none; }
+            #mobileMenuButton { display: block; }
+        }
+        @media (min-width: 769px) { 
+            #desktopNavLinks { display: flex; }
+            #mobileMenuButton { display: none; }
+            #mobileNavMenu { display: none !important; } 
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">Mental Help</a>
+            <div class="md:hidden">
+                <button id="mobileMenuButton" class="text-gray-600 hover:text-indigo-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+            <div id="desktopNavLinks" class="space-x-4"> <a href="#home" class="nav-link text-gray-600 hover:text-indigo-600">Home</a>
+                <a href="#about" class="nav-link text-gray-600 hover:text-indigo-600">About</a>
+                <a href="#services" class="nav-link text-gray-600 hover:text-indigo-600">Services</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-600">Contact</a>
+                <a href="#book" class="bg-indigo-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 cta-button">Book Session</a>
+            </div>
+        </nav>
+        <div id="mobileNavMenu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <a href="#home" class="block px-6 py-2 nav-link text-gray-600 hover:text-indigo-600">Home</a>
+            <a href="#about" class="block px-6 py-2 nav-link text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#services" class="block px-6 py-2 nav-link text-gray-600 hover:text-indigo-600">Services</a>
+            <a href="#contact" class="block px-6 py-2 nav-link text-gray-600 hover:text-indigo-600">Contact</a>
+            <a href="#book" class="block mx-6 my-2 bg-indigo-600 text-white text-center px-4 py-2 rounded-lg shadow-md hover:bg-indigo-700 cta-button">Book Session</a>
+        </div>
+    </header>
+
+    <section id="home" class="hero-bg py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <div class="hero-content">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                    Your Path to Mental Wellness Starts Here
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                    Discover a safe and supportive space for online counselling. Take the first step towards a more balanced and fulfilling life with professional guidance.
+                </p>
+                <div class="flex flex-col items-center space-y-3">
+                    <a href="#book" class="bg-indigo-600 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-indigo-700 cta-button">
+                        Book a 45-mins session now
+                    </a>
+                    <p class="text-md text-gray-700">Rs. 1500 per session</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">About Vipanchika</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-12">
+                <div class="md:w-1/3 flex justify-center mb-8 md:mb-0">
+                    <img src="vipanchika_photo.JPG" 
+                         alt="Vipanchika, Psychologist - Photo: vipanchika_photo.JPG"
+                         class="psychologist-photo"
+                         onerror="this.onerror=null; this.src='https://placehold.co/200x200/E0E7FF/1F2937?text=Vipanchika%27s+Photo'; this.alt='Placeholder image for Vipanchika';">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Vipanchika, Psychologist</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Hello! I am Vipanchika, a dedicated psychologist offering compassionate and confidential online counselling services. My approach is client-centered, focusing on creating a safe and non-judgmental space where you can explore your thoughts and feelings.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        I specialize in [mention areas of specialization, e.g., anxiety, depression, stress management, relationship issues, etc. - you can add this later]. My goal is to empower you with the tools and insights needed to navigate life's challenges, foster personal growth, and enhance your overall well-being.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Embarking on therapy is a courageous step, and I am here to support you on your journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title">Online Counselling Services</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                Offering convenient and confidential online therapy sessions tailored to your individual needs. Each session is 45 minutes long, providing a focused and supportive environment.
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="https://placehold.co/600x400/A5B4FC/3730A3?text=Individual+Counselling" 
+                         alt="Individual Counselling" 
+                         class="service-card-image"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/4F4F4F?text=Service+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Individual Counselling</h3>
+                        <p class="text-gray-600">
+                            One-on-one sessions to address personal challenges, emotional difficulties, and work towards your mental health goals.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                     <img src="https://placehold.co/600x400/C7D2FE/3730A3?text=Stress+Management" 
+                         alt="Stress & Anxiety Management" 
+                         class="service-card-image"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/4F4F4F?text=Service+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Stress & Anxiety Management</h3>
+                        <p class="text-gray-600">
+                            Learn effective coping strategies and techniques to manage stress, anxiety, and navigate life's pressures.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                    <img src="https://placehold.co/600x400/E0E7FF/3730A3?text=Personal+Growth" 
+                         alt="Personal Growth" 
+                         class="service-card-image"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/CCCCCC/4F4F4F?text=Service+Image';">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Personal Growth</h3>
+                        <p class="text-gray-600">
+                            Explore your potential, build self-awareness, and work towards personal development and fulfillment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-16 md:py-24 hero-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title">Ready to Begin Your Journey?</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-xl mx-auto">
+                Booking a session is simple. Click the button below to find a 45-minute slot that works for you. Session price: ₹1500.
+                If you have any questions before booking, feel free to reach out.
+            </p>
+            <a href="https://calendly.com/vipanchika-p/1-hour-counselling-session" target="_blank" rel="noopener noreferrer" onclick="handleBookingClick(event)" class="bg-green-500 text-white px-10 py-4 rounded-lg text-xl font-semibold shadow-lg hover:bg-green-600 cta-button">
+                Book Your Online Session Now
+            </a>
+            <p class="mt-4 text-sm text-gray-500">
+                (This will open the booking calendar in a new tab)
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
+                Have questions before booking? Feel free to send an email.
+            </p>
+            <a href="mailto:vipanchika.therapy@gmail.com?subject=Inquiry%20about%20Counselling%20Services"
+               class="bg-gray-700 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-md hover:bg-gray-800 cta-button">
+                Contact Us
+            </a>
+             <p class="mt-6 text-gray-500">
+                Please note: This email is for general inquiries. For urgent matters, please contact appropriate emergency services.
+            </p>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="currentYear"></span> Mental Help. All rights reserved.</p>
+            <p class="text-sm mt-2">
+                Online Counselling Services | Helping you find balance and peace.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // --- Navigation ---
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileNavMenu = document.getElementById('mobileNavMenu');
+        const desktopNavLinks = document.getElementById('desktopNavLinks'); 
+
+        if (mobileMenuButton && mobileNavMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileNavMenu.classList.toggle('hidden');
+            });
+        }
+        
+        function checkNavDisplay() {
+            if (window.innerWidth >= 769) { 
+                if(desktopNavLinks) {
+                  desktopNavLinks.classList.remove('hidden');
+                  desktopNavLinks.classList.add('flex'); 
+                }
+                if(mobileNavMenu) mobileNavMenu.classList.add('hidden');
+            } else {
+                if(desktopNavLinks) {
+                  desktopNavLinks.classList.add('hidden');
+                  desktopNavLinks.classList.remove('flex');
+                }
+            }
+        }
+        window.addEventListener('resize', checkNavDisplay);
+        document.addEventListener('DOMContentLoaded', checkNavDisplay); 
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetHref = this.getAttribute('href');
+                if (this.closest('#book a') && this.href.includes('calendly.com')) {
+                    return; 
+                }
+                if (this.href && this.href.startsWith('mailto:')) {
+                    return;
+                }
+
+                if (targetHref.startsWith('#') && targetHref.length > 1) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetHref);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        if (mobileNavMenu && !mobileNavMenu.classList.contains('hidden')) {
+                            mobileNavMenu.classList.add('hidden'); 
+                        }
+                    }
+                }
+            });
+        });
+
+        function handleBookingClick(event) {
+            // console.log("Booking button clicked, opening Calendly.");
+        }
+        
+        const navBookButtons = document.querySelectorAll('header nav a[href="#book"], #mobileNavMenu a[href="#book"]');
+        navBookButtons.forEach(navBookButton => {
+            navBookButton.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                const targetElement = document.querySelector('#book');
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                     if (mobileNavMenu && !mobileNavMenu.classList.contains('hidden')) {
+                        mobileNavMenu.classList.add('hidden'); 
+                    }
+                }
+            });
+        });
+
+        // Removed Imagen API Image Generation script block
+    </script>
+
+</body>
+</html>
